@@ -405,7 +405,7 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 builder.setTitle("关于");
                 builder.setIcon(R.mipmap.ic_launcher);
-                builder.setMessage("这是基于Android系统构建的一个简单的模拟操作系统，模拟了操作系统的进程管理模块。\n由15软工的陈帅和田俊超开发完成。");
+                builder.setMessage("这是基于Android系统构建的一个简单的模拟操作系统，模拟了操作系统的进程管理模块。\n由15软件陈帅和田俊超开发完成。");
                 builder.show();
             }
         });
@@ -451,6 +451,8 @@ public class MainActivity extends AppCompatActivity {
         tv_running_results = (TextView) findViewById(R.id.tv_running_results);
 
         lv_results = (ListView) findViewById(R.id.lv_results);
+
+        et_input.setText("s=9;s++;s--;!8;s++;s--;end;");
     }
 
     // 显示提示对话框
